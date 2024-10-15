@@ -1,0 +1,38 @@
+<p>navbar works!</p>
+
+<p>1+1</p>
+<p>{{ 1 + 1 }}</p>
+
+<p>count</p>
+<p>{{ count }}</p>
+
+<button (click)="increaseCount()">Artır</button>
+<button (click)="decreaseCount()">Azalt</button>
+
+<br />
+<input
+  placeholder="Adınızı Girin"
+  [value]="name"
+  (keyup)="onNameChange($event)"
+/>
+<button (click)="randomName()">Rastgele İsim Getir</button>
+<p>{{ name }}</p>
+
+<!-- NGModel = ilgili değişken ile two way d.b yapar. -->
+<!-- Banana Syntax -->
+<input placeholder="Soyad girin.." [(ngModel)]="surname" />
+<p>{{ surname }}</p>
+
+<!-- Listelerle çalışmak -->
+<p>*************</p>
+<!-- unordered list -->
+@if(names.length > 0) {
+<ul>
+  @for(name of names; track name; let i = $index) {
+  <li>{{ i + 1 }}. {{ name }}</li>
+  }
+  <!-- <li *ngFor="let name of names">{{ name }}</li> -->
+</ul>
+} @else{
+<p>İsim listesi boş.</p>
+}
