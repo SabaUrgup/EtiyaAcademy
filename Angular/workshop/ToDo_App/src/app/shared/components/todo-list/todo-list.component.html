@@ -1,0 +1,39 @@
+<h3>To-Do List</h3>
+<label>To-Do Giriniz</label>
+<input
+  placeholder="Todo..."
+  [(ngModel)]="newTodo"
+  class="form-control"
+/>
+<button class="btn btn-primary mt-2" (click)="add()">Ekle</button>
+
+<hr />
+
+<div class="row">
+  <div class="col-2" *ngFor="let todo of toDoListFromBackend; let i = index">
+    <app-todo-card
+      [toDoFromOtherPage]="todo.title"
+      (onRemoveClick)="remove(todo.id)"
+    ></app-todo-card>
+    <button
+      class="btn btn-secondary"
+      (click)="fetchTodoDetail(todo.id)"
+    >
+      Detayı Gör (ID: {{ todo.id }})
+    </button>
+  </div>
+</div>
+
+<div *ngIf="toDoListFromBackend.length === 0">
+  <p>Henüz bir todo eklemediniz.</p>
+</div>
+
+<!-- <div *ngIf="selectedTodoDetail">
+  <h4>Seçilen To-Do Detayı:</h4>
+  <p>ID: {{ selectedTodoDetail.id }}</p>
+  <p>Başlık: {{ selectedTodoDetail.title }}</p>
+  <p>Tamamlandı mı? {{ selectedTodoDetail.completed ? 'Evet' : 'Hayır' }}</p>
+</div>
+<div *ngIf="!selectedTodoDetail">
+  <p>Seçilen Todo detayı bulunamadı.</p>
+</div> -->
