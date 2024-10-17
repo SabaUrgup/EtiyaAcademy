@@ -1,0 +1,22 @@
+<h3>To-Do List</h3>
+<label>To-Do Giriniz</label>
+<input placeholder="Todo..." [(ngModel)]="newTodo" />
+<button class="btn btn-primary" (click)="add()">Ekle</button>
+<div class="row">
+  @for(todo of toDoListFromBackend; track todo; let i = $index) {
+  <div class="col-2">
+    <app-todo-card
+      [toDoFromOtherPage]="todo.title"
+      (onRemoveClick)="remove($event)"
+    />
+  </div>
+
+  } @empty {
+  <p>Henüz bir todo eklemediniz.</p>
+  }
+</div>
+
+<!-- Backend isteklerinin her birini çalıştıran kodları yazalım -->
+<!-- Ekleme işlemi post isteği -->
+<!-- Detay sayfası oluşturup orada da örnek bir id (1) detay isteği atsın -->
+<!-- Silme işlemi delete isteği atsın -->
