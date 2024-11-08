@@ -9,6 +9,7 @@
   - [Workshop 11: HTML Tutorial](#workshop-11-html-tutorial)
   - [Workshop 12: ToDoList App](#workshop-12-todolist-app)
   - [Workshop 13: ToDo App](#workshop-13-todo-app)
+  - [Java Camp 2022](#java-camp-2022)
 - [Medium Yazıları](#medium-yazıları)
   - [Veri Modelleme ve Normalizasyon: Java ile Adım Adım Rehber](#veri-modelleme-ve-normalizasyon-java-ile-adım-adım-rehber)
   - [API ve Restful API Nedir?](#api-ve-restful-api-nedir)
@@ -61,6 +62,10 @@ Angular ile temel bir yapılacaklar listesi uygulaması geliştirilmiştir.
 Bu workshop’ta Angular kullanarak daha gelişmiş bir yapılacaklar listesi uygulaması geliştirilmiştir.
 - [Workshop 13 - ToDo_App](https://github.com/SabaUrgup/EtiyaAcademy/tree/main/Angular/workshop/ToDo_App)
 
+### Java Camp 2022
+
+Bu workshop’ta Java programlamaya giriş ve temel kavramların videosu uygulanmıştır. Java ile uygulamalar geliştirilmiştir.
+- [Java Camp 2022 - Workshop Kaynakları](https://github.com/SabaUrgup/EtiyaAcademy/tree/main/Java/workshop/JavaCamp2022)
 
 ## Medium Yazıları
 
@@ -68,7 +73,7 @@ Bu workshop’ta Angular kullanarak daha gelişmiş bir yapılacaklar listesi uy
 
 Bu yazı, veri modelleme ve normalizasyonun ne olduğunu açıklayacak ve Java ile örnekler üzerinden konuları anlatmaktadır.
 
-- [Veri Modelleme ve Normalizasyon: Java ile Adım Adım Rehber?](https://medium.com/@sabaurgup/veri-modelleme-ve-normalizasyon-java-ile-ad%C4%B1m-ad%C4%B1m-rehber-94c087352995))
+- [Veri Modelleme ve Normalizasyon: Java ile Adım Adım Rehber?](https://medium.com/@sabaurgup/veri-modelleme-ve-normalizasyon-java-ile-ad%C4%B1m-ad%C4%B1m-rehber-94c087352995)
 
 ### API ve Restful API Nedir?
 
@@ -87,5 +92,3 @@ SQL ve NoSQL veritabanlarının farkları ve hangi durumlarda hangi veritabanlar
 Angular'da modüllerin yapılandırılması ve yönetilmesi üzerine bir yazıdır.
 
 - [Angular Modül Yapılandırılması ve Kullanımı](https://medium.com/@sabaurgup/angular-modül-yapılandırılması-ve-kullanımı-dad2e408a06e)
-
-
